@@ -1,0 +1,64 @@
+.feed {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.feed-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #dbdbdb;
+  padding-bottom: 10px;
+}
+
+.feed-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.feed-toggle {
+  background: transparent;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  font-weight: 500;
+  border-radius: 4px;
+}
+
+.feed-toggle.active {
+  background-color: #0095f6;
+  color: white;
+}
+
+.refresh-button {
+  background-color: #f0f0f0;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.refresh-button:hover {
+  background-color: #e0e0e0;
+}
+
+.posts-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.no-posts {
+  text-align: center;
+  color: #8e8e8e;
+  margin-top: 30px;
+}
+
+.loading {
+  text-align: center;
+  margin-top: 30px;
+  color: #8e8e8e;
+} 

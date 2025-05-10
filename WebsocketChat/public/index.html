@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WebSocket Chat</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <div id="login-container" class="card">
+      <h2>WebSocket Chat</h2>
+      <div class="form-group">
+        <input type="text" id="username-input" placeholder="Username" required>
+      </div>
+      <button id="login-btn" class="btn">Login</button>
+    </div>
+
+    <div id="main-container" class="main-container hidden">
+      <div class="sidebar">
+        <div class="user-info">
+          <h3 id="current-user">Welcome!</h3>
+        </div>
+        
+        <div class="tab-container">
+          <div class="tabs">
+            <button class="tab-btn active" data-tab="friends">Friends</button>
+            <button class="tab-btn" data-tab="chats">Chats</button>
+            <button class="tab-btn" data-tab="invites">Invites <span id="invite-count" class="badge hidden">0</span></button>
+          </div>
+          
+          <div id="friends-tab" class="tab-content active">
+            <div class="add-friend">
+              <input type="text" id="friend-id-input" placeholder="Friend ID">
+              <button id="add-friend-btn" class="btn btn-small">Add</button>
+            </div>
+            <div id="friends-list" class="list-container"></div>
+          </div>
+          
+          <div id="chats-tab" class="tab-content">
+            <div id="chats-list" class="list-container"></div>
+          </div>
+          
+          <div id="invites-tab" class="tab-content">
+            <div id="invites-list" class="list-container"></div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="chat-container">
+        <div class="chat-header">
+          <h3 id="chat-name">Select a chat</h3>
+          <div class="chat-actions">
+            <button id="invite-to-chat-btn" class="btn btn-small hidden">Invite Users</button>
+            <button id="leave-chat-btn" class="btn btn-small btn-danger hidden">Leave Chat</button>
+          </div>
+        </div>
+        
+        <div id="chat-messages" class="chat-messages"></div>
+        
+        <div id="message-form" class="message-form hidden">
+          <input type="text" id="message-input" placeholder="Type a message...">
+          <button id="send-btn" class="btn">Send</button>
+        </div>
+      </div>
+    </div>
+    
+    <div id="invite-modal" class="modal hidden">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3>Invite to Chat</h3>
+          <span class="close-modal">&times;</span>
+        </div>
+        <div class="modal-body">
+          <div id="invite-friends-list" class="list-container"></div>
+          <div class="form-check">
+            <label>
+              <input type="checkbox" id="group-chat-checkbox">
+              Create as Group Chat
+            </label>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button id="send-invite-btn" class="btn">Send Invite</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="app.js"></script>
+</body>
+</html> 

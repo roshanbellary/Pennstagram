@@ -1,0 +1,29 @@
+## HW4 Reflection
+
+full_name: "A Student"  # Please fill in your full name
+penn_email: "astudent@upenn.edu"  # Please fill in your Penn email
+
+# List the features you implemented or write "Entire assignment"
+features_implemented: "blah"
+
+# List any extra-credit tasks completed
+ec_implemented: "blah"
+
+# Time Investment
+time_investment:
+  HW4-RC: 10  # Hours spent on HW4 regular credit
+  HW4-EC: 10  # Hours spent on HW4 extra credit
+
+# What you liked
+feedback_liked: something |
+  
+
+# What you disliked and suggestions for improvement
+feedback_disliked: something |
+  
+
+# Academic Integrity
+copied_code: false  # Set to true if you copied any code from the Internet or classmates
+copied_code_details: ""  # If copied_code is true, specify the source
+collaborated_with_others: false  # Set to true if you collaborated with anyone on this assignment
+collaborated_with_others_details: ""  # If collaborated_with_others is true, specify with whom

@@ -1,0 +1,11 @@
+[Unit]
+Description=Run InstaLite Adsorption Rank Job Every Hour
+Requires=adsorption-rank.service
+
+[Timer]
+Unit=adsorption-rank.service
+OnCalendar=hourly
+Persistent=true
+
+[Install]
+WantedBy=timers.target

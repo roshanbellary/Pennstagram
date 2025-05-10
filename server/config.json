@@ -1,0 +1,18 @@
+{
+    "max": 1000,
+    "serverPort": 8080,
+    "awsRegion": "us-east-1",
+    "s3BucketName": "imdb-embeddings-upenn-nets2120-2024sp-rbellary",
+    "chromaDbName": "imdb_photos",
+    "database": {
+        "host": "localhost",
+        "port": "3306",
+        "user": "admin",
+        "database": "imdb_basic",
+        "password": "TIF|UFlfCn7[XU67U~h?A]YGzVyK"
+    },
+    "chroma": {
+        "host": "localhost",
+        "port": "8000"
+    }
+  }

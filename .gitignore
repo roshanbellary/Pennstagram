@@ -1,0 +1,9 @@
+node_modules/
+build/
+*.log
+chroma_db/
+chromadb/
+.env
+dist/
+.DS_Store
+merged_imdb_data.csv

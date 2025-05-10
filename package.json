@@ -1,0 +1,115 @@
+{
+  "name": "milestone1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "type": "module",
+  "scripts": {
+    "start": "node --experimental-vm-modules server/app.js",
+    "index": "node --experimental-vm-modules server/models/index_data.js",
+    "create_tables": "node server/models/create_tables.js",
+    "test": "node --experimental-vm-modules node_modules/.bin/jest --detectOpenHandles --forceExit --outputFile=test_results.json --json",
+    "start:react": "react-scripts start",
+    "build": "react-scripts build",
+    "eject": "react-scripts eject"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@aws-sdk/client-dynamodb": "^3.509.0",
+    "@aws-sdk/client-s3": "^3.740.0",
+    "@aws-sdk/credential-provider-ini": "3.734.0",
+    "@emotion/react": "^11.11.3",
+    "@emotion/styled": "^11.11.0",
+    "@langchain/community": "^0.3.36",
+    "@langchain/core": "^0.3.42",
+    "@langchain/openai": "^0.4.9",
+    "@mui/material": "^5.15.10",
+    "@tailwindcss/postcss": "^4.1.4",
+    "@tensorflow/tfjs": "^4.22.0",
+    "@tensorflow/tfjs-node": "^4.22.0",
+    "@vladmandic/build": "^0.10.2",
+    "@vladmandic/face-api": "^1.7.15",
+    "@vladmandic/pilogger": "^0.5.1",
+    "autoprefixer": "^10.4.21",
+    "axios": "^1.7.9",
+    "bcrypt": "^5.0.1",
+    "cheerio": "^1.0.0-rc.12",
+    "chromadb": "^1.10.5",
+    "cors": "^2.8.5",
+    "dotenv": "16.4.7",
+    "esbuild": "^0.19.11",
+    "eslint": "^8.56.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-json": "^3.1.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^6.1.1",
+    "express": "^4.21.2",
+    "express-session": "^1.18.1",
+    "fs": "^0.0.1-security",
+    "kafkajs": "^2.2.4",
+    "kafkajs-snappy": "^1.1.0",
+    "langchain": "^0.3.24",
+    "long": "^5.3.2",
+    "multer": "^1.4.5-lts.2",
+    "mysql2": "^3.14.1",
+    "node-cron": "^3.0.3",
+    "node-fetch": "^3.3.2",
+    "nodemon": "^3.0.3",
+    "playwright": "^1.50.1",
+    "postcss": "^8.5.3",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-router-dom": "^7.5.1",
+    "react-scripts": "5.0.1",
+    "rimraf": "^5.0.5",
+    "seedrandom": "^3.0.5",
+    "socket.io": "^4.8.1",
+    "socket.io-client": "^4.8.1",
+    "split": "^1.0.1",
+    "tailwindcss": "^3.3.3",
+    "typeorm": "^0.3.20",
+    "uuid": "^11.1.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.26.10",
+    "@babel/preset-env": "^7.26.9",
+    "@babel/preset-react": "^7.16.7",
+    "@playwright/test": "^1.50.1",
+    "@testing-library/jest-dom": "^6.6.3",
+    "@testing-library/react": "^16.2.0",
+    "@testing-library/user-event": "^14.6.1",
+    "@types/react-dom": "^19.1.2",
+    "babel-jest": "^29.7.0",
+    "jest": "^29.7.0",
+    "msw": "0.47.0",
+    "ts-jest": "^29.2.5",
+    "whatwg-fetch": "3.6.0"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "jest": {
+    "moduleNameMapper": {
+      "^uuid$": "uuid",
+      "\\.(css|less|scss|sass)$": "identity-obj-proxy"
+    },
+    "transform": {
+      "^.+\\.(js|jsx|mjs)$": "babel-jest"
+    },
+    "testMatch": [
+      "**/server/tests/*test*.js?(x)"
+    ],
+    "testEnvironment": "node"
+  }
+}

@@ -1,0 +1,12 @@
+{
+    "database": {
+      "host": "localhost",
+      "port": "3306",
+      "database": "imdb_basic"
+    },
+    "serverPort": "8080",
+      "groupId": "mundes",
+      "bootstrapServers": ["localhost:9092"],
+      "topic": "Bluesky-Kafka",
+      "port": 4567
+  }

@@ -1,0 +1,8 @@
+{
+  "short_name": "Pennstagram",
+  "name": "Pennstagram Social Media",
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+} 
