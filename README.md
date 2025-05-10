@@ -14,6 +14,20 @@
 
 InstaLite is an Instagram-like social media platform that allows users to create accounts, post content, follow friends, and interact with posts through likes and comments. The platform includes advanced features such as adsorption-based content ranking, real-time chat, and integration with external data sources.
 
+## How to Run
+First, set up an AWS RDS instance and EC2 instance and setup a tunnel to the EC2 instance at
+port 3306. Finally, tunnel to the EC2 instance for the Kafka stream
+
+Run the server using **npm start**
+
+Run the frontend using **npm run start:react**
+
+First set up the chromadb instance using **./chroma_setup.sh**. Then run the chroma server using **./run-chroma.sh**
+Finally, Run the indexing for chromadb using **npm run index**.
+
+Run the chron job for the adsorption algorithm using **./run-adsorption-rank.sh**
+
+. Run the Kafka streaming 
 ## Features Implemented
 
 ### Core Features
