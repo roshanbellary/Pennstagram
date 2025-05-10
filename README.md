@@ -1,14 +1,9 @@
 # InstaLite - NETS 2120 Project
 
-## Team Information
-
-**Team Name:** Mundes
-
 **Team Members:**
+- Roshan Bellary (rbellary@seas.upenn.edu)
 - Rishabh Mandayam (rcmand@seas.upenn.edu)
 - Vedant Gaur (vedantg@seas.upenn.edu)
-- Roshan Bellary (rbellary@seas.upenn.edu)
-- Vincent Lin
 
 ## Project Description
 
