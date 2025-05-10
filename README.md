@@ -22,7 +22,6 @@ Finally, Run the indexing for chromadb using **npm run index**.
 
 Run the chron job for the adsorption algorithm using **./run-adsorption-rank.sh**
 
-. Run the Kafka streaming 
 ## Features Implemented
 
 ### Core Features
