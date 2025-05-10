@@ -11,7 +11,9 @@ InstaLite is an Instagram-like social media platform that allows users to create
 
 ## How to Run
 First, set up an AWS RDS instance and EC2 instance and setup a tunnel to the EC2 instance at
-port 3306. Finally, tunnel to the EC2 instance for the Kafka stream
+port 3306. 
+
+Finally, tunnel to the EC2 instance for the Kafka stream
 
 Run the server using **npm start**
 
